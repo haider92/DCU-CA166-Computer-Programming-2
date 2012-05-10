@@ -1,0 +1,6 @@
+EI2134  London      23175
+EI2135  Dublin      45128
+EI2136  Cork        12321  
+EI2137  Belfast     12357
+EI2138  Manchester  35128
+EI2139  Liverpool   35012
