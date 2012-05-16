@@ -36,6 +36,6 @@ class Part6 {
         Date d1 = new Date(17,2,2011);
     	Date d2 = new Date(17,2,2013);
        	System.out.println(d1.elapsed(d2));
-		System.out.println(d1.elapsed());
+        System.out.println(d1.elapsed());
     }
 }
