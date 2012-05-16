@@ -15,11 +15,10 @@ class Date {
     }
 
     long elapsed() {
-        GregorianCalendar cal1 = new GregorianCalendar();
-        GregorianCalendar cal2= new GregorianCalendar();
-        cal2.set(year,month,day);
-        return (((((((cal1.getTimeInMillis() - cal2.getTimeInMillis()))/1000)/60)/60)/24)/365);
-    }
+		GregorianCalendar today = new GregorianCalendar();
+		GregorianCalendar inputted = new GregorianCalendar(year,month,day);
+		return(((((((today.getTimeInMillis() - inputted.getTimeInMillis())/1000)/60)/60)/24)/365));
+	}
 
     public String toString() {
         return(day+"/"+month+"/"+year);
