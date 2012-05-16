@@ -15,16 +15,16 @@ class Date {
     }
 
     long elapsed(Date d2) {
-		GregorianCalendar compareWith = new GregorianCalendar(year,month,day);
-		GregorianCalendar dateSupplied = new GregorianCalendar(d2.year,d2.month,d2.day);
-		return(((((((dateSupplied.getTimeInMillis() - compareWith.getTimeInMillis())/1000)/60)/60)/24)/365));
-	}
+        GregorianCalendar compareWith = new GregorianCalendar(year,month,day);
+        GregorianCalendar dateSupplied = new GregorianCalendar(d2.year,d2.month,d2.day);
+        return(((((((dateSupplied.getTimeInMillis() - compareWith.getTimeInMillis())/1000)/60)/60)/24)/365));
+    }
 	
-	long elapsed() {
-		GregorianCalendar today = new GregorianCalendar();
-		GregorianCalendar compareWith = new GregorianCalendar(year,month,day);
-		return(((((((today.getTimeInMillis() - compareWith.getTimeInMillis())/1000)/60)/60)/24)/365));
-	}
+    long elapsed() {
+        GregorianCalendar today = new GregorianCalendar();
+        GregorianCalendar compareWith = new GregorianCalendar(year,month,day);
+        return(((((((today.getTimeInMillis() - compareWith.getTimeInMillis())/1000)/60)/60)/24)/365));
+    }
 
     public String toString() {
         return(day+"/"+month+"/"+year);
