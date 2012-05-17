@@ -29,7 +29,7 @@ class Duration {
         result.mins = mins + d2.mins;
         if((result.mins % 60) != 0) {
             result.hours = result.hours+(result.mins / 60);
-            result.mins = result.mins - (60 % result.mins);
+            result.mins =  result.mins%60;
         }
         return result;
     }
