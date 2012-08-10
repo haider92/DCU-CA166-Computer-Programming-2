@@ -1,0 +1,2 @@
+Procedures - Do not return things
+Functions - Do return things
