@@ -1,4 +1,4 @@
-class Part4{
+class Part4 {
 	public static void main(String[] args) {
 		String[] names = {"Sligo", "Dublin", "Llanfairpwllgwyngyll", "Paris", "London"};
 		int i=0;

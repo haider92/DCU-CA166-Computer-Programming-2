@@ -8,13 +8,3 @@ class Part3 {
         System.out.println("" + 2011);
     }
 }
-
-/*
-Output:
-w
-4
--1
-tware
-software    engineering
-2011
-*/

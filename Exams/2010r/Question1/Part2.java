@@ -8,12 +8,3 @@ class Part2 {
         System.out.println("    word     cup    ".trim());
     }
 }
-
-/*
-"ography"
-4
--1
-0
-"2010"
-"word   cup"
-*/

@@ -14,7 +14,3 @@ class Part3 {
         System.out.print(count);
     }
 }
-
-/*
-5
-*/

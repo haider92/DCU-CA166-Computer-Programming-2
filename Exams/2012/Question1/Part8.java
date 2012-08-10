@@ -1,6 +1,6 @@
 import java.io.*;
 
-class PrintNames {
+class Part8 {
 	public static void main(String[] args) {
 		try {
 			RandomAccessFile f = new RandomAccessFile("names.dat","r");

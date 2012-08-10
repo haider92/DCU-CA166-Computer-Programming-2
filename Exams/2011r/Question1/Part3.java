@@ -8,12 +8,3 @@ class Part3 {
         System.out.println("CA166".toLowerCase());
     }
 }
-
-/*
-o
-4
--1
-programs*********
-software   engineering
-ca166
-*/

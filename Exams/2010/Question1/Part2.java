@@ -8,12 +8,3 @@ class Part2 {
         System.out.println(Integer.parseInt("23"));
     }
 }
-
-/*
-2
-cr
-the   end
-ABD123
-a
-23
-*/

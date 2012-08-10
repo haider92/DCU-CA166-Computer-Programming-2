@@ -27,7 +27,7 @@ class Point {
     }
 }
 
-class Part6 {
+class Part7 {
     public static void main(String[] args) {
         System.out.println("Enter two points");
         Point first = new Point();

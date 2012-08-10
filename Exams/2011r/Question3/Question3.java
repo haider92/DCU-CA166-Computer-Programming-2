@@ -12,11 +12,6 @@ class Point {
     }
     //end of constructors
 
-    /* void get() {
-    	x = Console.readInt();
-    	y = Console.readInt();
-    } */
-
     void put() {
         System.out.print("(" + x + "," + y + ")");
     }
@@ -43,11 +38,6 @@ class Line {
         this.finish = finish;
     }
     //end of constructors
-
-    /*void get() {
-    	start.get();
-    	finish.get();
-    } */
 
     double slope() {
         return(((finish.getY() - start.getY()) / (finish.getX() - start.getX())));
