@@ -23,7 +23,7 @@ class Subjects {
 
     boolean contains(String s) {
         for(String subject : subjects) {
-            if(subject==s) return true;
+            if(subject.equals(s)) return true;
         }
         return false;
     }
@@ -55,8 +55,18 @@ class Enrollment {
         while(!Console.EndOfFile()) {
             Student s1 = new Student();
             s1.getStudent();
-            s1.putStudent();
-            System.out.println();
+            if(args.length > 0) {
+              for(String subject : args) {
+                if(s1.isTaking(subject)) {
+                  s1.putStudent();
+                  System.out.println();
+                  break;
+                }
+              }
+            } else {
+              s1.putStudent();
+              System.out.println();
+            }
         }
     }
 }
