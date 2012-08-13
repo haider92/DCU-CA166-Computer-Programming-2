@@ -7,7 +7,8 @@ class Name {
     }
 
     void putName() {
-        System.out.print(second + ", " + first);
+        String name = second+", "+first;
+        System.out.printf("%-30s", name);
     }
 }
 
@@ -42,7 +43,7 @@ class Student {
 
     void putStudent() {
         name.putName();
-        System.out.print(" " + number);
+        System.out.print(number);
     }
 
     boolean isTaking(String s) {
@@ -52,6 +53,7 @@ class Student {
 
 class Enrollment {
     public static void main(String[] args) {
+        int total=0;
         while(!Console.EndOfFile()) {
             Student s1 = new Student();
             s1.getStudent();
@@ -60,13 +62,16 @@ class Enrollment {
                 if(s1.isTaking(subject)) {
                   s1.putStudent();
                   System.out.println();
+                  total++;
                   break;
                 }
               }
             } else {
               s1.putStudent();
+              total++;
               System.out.println();
             }
         }
+        System.out.println("\nTotal = " + total);
     }
 }
